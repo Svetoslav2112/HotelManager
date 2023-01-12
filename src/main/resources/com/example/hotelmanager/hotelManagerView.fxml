@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.3302013422818792" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="747.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelmanager.HotelManagerController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="188.0">
+         <children>
+            <GridPane fx:id="gridCheck" layoutX="36.0" layoutY="16.0" prefHeight="252.0" prefWidth="164.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox id="WIFI" mnemonicParsing="false" text="Wi - Fi" GridPane.halignment="LEFT" />
+                  <CheckBox id="KITCHEN" mnemonicParsing="false" text="Kitchen" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                  <CheckBox id="TV" mnemonicParsing="false" text="TV" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+                  <CheckBox id="AC" mnemonicParsing="false" text="A/C" GridPane.halignment="LEFT" GridPane.rowIndex="3" />
+                  <CheckBox id="BATHTUB" mnemonicParsing="false" text="Bathtub" GridPane.halignment="LEFT" GridPane.rowIndex="4" />
+                  <CheckBox id="MINI_FRIDGE" mnemonicParsing="false" text="Mini - fridge" GridPane.halignment="LEFT" GridPane.rowIndex="5" />
+                  <CheckBox id="ROOM_SERVICE" mnemonicParsing="false" text="Room service" GridPane.halignment="LEFT" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Separator layoutX="1.0" layoutY="276.0" prefHeight="8.0" prefWidth="241.0" />
+            <StackPane layoutX="-1.0" layoutY="282.0" prefHeight="291.0" prefWidth="243.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="166.0" prefWidth="243.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btnExitChat" disable="true" mnemonicParsing="false" onAction="#onExitChatButtonClicked" prefHeight="3.0" prefWidth="57.0" text="Exit Chat" textAlignment="CENTER" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="txtChat" disable="true" text="Chat">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="txtChatField" disable="true" prefHeight="291.0" prefWidth="239.0">
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <HBox prefHeight="43.0" prefWidth="244.0">
+                           <children>
+                              <TextField fx:id="txtMessageInput" disable="true" prefHeight="49.0" prefWidth="211.0">
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="btnSend" contentDisplay="CENTER" disable="true" mnemonicParsing="false" onAction="#onSendButtonClicked" prefHeight="31.0" prefWidth="28.0" text="SEND" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets bottom="2.0" right="2.0" top="2.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="6.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnStartChat" mnemonicParsing="false" onAction="#onStartChatButtonClicked" prefHeight="60.0" prefWidth="100.0" text="Start a chat" />
+               </children>
+            </StackPane>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="15.0" layoutY="212.0" prefHeight="42.0" prefWidth="240.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="42.0" prefWidth="110.0">
+                     <children>
+                        <DatePicker fx:id="from" onAction="#onDateFromClicked" prefHeight="25.0" prefWidth="130.0" promptText="From:" />
+                     </children>
+                  </VBox>
+                  <Line endX="-9.166656494140625" startX="-20.0" strokeLineJoin="BEVEL">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" prefHeight="42.0" prefWidth="110.0">
+                     <children>
+                        <DatePicker fx:id="to" onAction="#onDateToClicked" prefHeight="25.0" prefWidth="130.0" promptText="To:" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="55.0" prefWidth="198.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="45.0" text="People" />
+                        <Slider fx:id="slider" majorTickUnit="1.0" max="6.0" minorTickCount="6" onMouseDragReleased="#onSlide" onMouseReleased="#onSlide" prefHeight="38.0" prefWidth="191.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="2.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button layoutX="213.0" layoutY="519.0" mnemonicParsing="false" onAction="#onReserveButtonClicked" prefHeight="27.0" prefWidth="84.0" text="Reserve" />
+            <ImageView fx:id="imageView" fitHeight="169.0" fitWidth="278.0" layoutX="121.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></ImageView>
+            <GridPane fx:id="gridpane" layoutX="158.0" layoutY="467.0" prefHeight="24.0" prefWidth="200.0" AnchorPane.topAnchor="467.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <RadioButton id="1" fx:id="img1" mnemonicParsing="false" GridPane.halignment="CENTER" />
+                  <RadioButton id="2" fx:id="img2" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <RadioButton id="3" fx:id="img3" mnemonicParsing="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+               </children>
+            </GridPane>
+            <Text layoutX="188.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easy Hotel" wrappingWidth="131.65185546875">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Text>
+            <GridPane fx:id="hotelRoomsGrid" layoutX="21.0" layoutY="46.0" prefHeight="155.0" prefWidth="452.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ToggleButton id="1" mnemonicParsing="false" text="Room 1" GridPane.halignment="CENTER" />
+                  <ToggleButton id="2" mnemonicParsing="false" text="Room 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                  <ToggleButton id="3" mnemonicParsing="false" text="Room 3" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                  <ToggleButton id="4" mnemonicParsing="false" text="Room 4" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                  <ToggleButton id="5" mnemonicParsing="false" text="Room 5" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                  <ToggleButton id="6" mnemonicParsing="false" text="Room 6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ToggleButton id="7" mnemonicParsing="false" text="Room 7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ToggleButton id="8" mnemonicParsing="false" text="Room 8" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ToggleButton id="9" mnemonicParsing="false" text="Room 9" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ToggleButton id="10" mnemonicParsing="false" text="Room 10" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <ToggleButton id="11" mnemonicParsing="false" text="Room 11" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <ToggleButton id="12" mnemonicParsing="false" text="Room 12" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <ToggleButton id="13" mnemonicParsing="false" text="Room 13" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <ToggleButton id="14" mnemonicParsing="false" text="Room 14" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <ToggleButton id="15" mnemonicParsing="false" text="Room 15" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                  <ToggleButton id="16" mnemonicParsing="false" text="Room 16" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <ToggleButton id="17" mnemonicParsing="false" text="Room 17" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <ToggleButton id="18" mnemonicParsing="false" text="Room 18" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <ToggleButton id="19" mnemonicParsing="false" text="Room 19" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                  <ToggleButton id="20" mnemonicParsing="false" text="Room 20" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <TextField fx:id="tempField" alignment="CENTER" layoutY="494.0" prefHeight="24.0" prefWidth="132.0" />
+            <Button fx:id="weatherBtn" layoutY="467.0" mnemonicParsing="false" onAction="#onGetWeatherClicked" prefHeight="17.0" prefWidth="132.0" text="Get weather forecast" />
+            <TextField fx:id="condField" alignment="CENTER" layoutY="520.0" prefHeight="24.0" prefWidth="132.0" />
+            <TextField fx:id="windField" alignment="CENTER" layoutY="547.0" prefHeight="24.0" prefWidth="132.0" />
+            <ImageView fx:id="tempImg" fitHeight="24.0" fitWidth="25.0" layoutX="135.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="condImg" fitHeight="29.0" fitWidth="27.0" layoutX="135.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="windImg" fitHeight="24.0" fitWidth="25.0" layoutX="135.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
