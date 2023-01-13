@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f5f537a-f848-41b9-b901-f255c693896a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/HotelManager_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ui-and-architecture/Screenshot 2023-01-14 at 0.15.11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6f5f537a-f848-41b9-b901-f255c693896a" name="Changes" comment="added ui and architecture screenshots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="6ca55d9d-e183-4068-8d69-b6044f5cde2d" name="Changes by ASUS" comment="" />
@@ -28,6 +24,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
@@ -63,6 +60,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/ui-and-architecture" />
       <recent name="C:\Users\ASUS\Desktop\Thrift\backup\HotelManager-master\images\r1" />
       <recent name="C:\Users\ASUS\Desktop\Thrift\HotelManager-master\images" />
     </key>
@@ -134,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673203901253</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added ui and architecture screenshots">
+      <created>1673648614915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673648614915</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added ui and architecture screenshots">
+      <created>1673648999837</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673648999837</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +167,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added UI controls" />
     <MESSAGE value="wired some event listeners and added socket functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="wired some event listeners and added socket functionality" />
+    <MESSAGE value="added ui and architecture screenshots" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ui and architecture screenshots" />
   </component>
 </project>
